@@ -24,7 +24,7 @@ try:
     set
 except NameError:
     from sets import Set as set
-    
+
 join = os.path.join
 py_version = 'python%s.%s' % (sys.version_info[0], sys.version_info[1])
 is_jython = sys.platform.startswith('java')
@@ -36,7 +36,7 @@ REQUIRED_MODULES = ['os', 'posix', 'posixpath', 'ntpath', 'genericpath',
                     're', 'sre', 'sre_parse', 'sre_constants', 'sre_compile',
                     'lib-dynload', 'config', 'zlib']
 
-if sys.version_info[:2] == (2, 6):
+if sys.version_info[:2] >= (2, 6) and  sys.version_info[:2] <= (3, 0):
     REQUIRED_MODULES.extend(['warnings', 'linecache', '_abcoll', 'abc'])
 if sys.version_info[:2] <= (2, 3):
     REQUIRED_MODULES.extend(['sets', '__future__'])
