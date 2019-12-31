@@ -19,7 +19,7 @@ Building the site
      ~/geoscript.org$ ant site-doc
 
 - via setup_website
-    Run (with python version 2.5):
+    Run (with python version 2.5)::
         ~$ cd geoscript.org
         ~/geoscript.org$ python2.5 setup_website
 
