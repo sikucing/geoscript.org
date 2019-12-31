@@ -12,7 +12,8 @@ Clone the repository from github::
 
 Building the site
 -----------------
-- Via anaconda
+- Via anaconda::
+
      ~$ cd geoscript.org
      ~/geoscript.org$ conda create --name geoscript-org -file=environment.yml
      ~/geoscript.org$ conda activate geoscript-org
@@ -20,6 +21,7 @@ Building the site
 
 - via setup_website
     Run (with python version 2.5)::
+    
         ~$ cd geoscript.org
         ~/geoscript.org$ python2.5 setup_website
 
